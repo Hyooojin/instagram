@@ -21,9 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-    adapter: mysql2
-    encoding: utf8
-    database: instagram_production
-    pool: 5
-    username: root
-    password: ""
+  <<: *default
+  database: db/production.sqllit3
