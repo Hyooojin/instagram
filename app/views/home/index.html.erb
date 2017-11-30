@@ -1,2 +1,11 @@
 <h1>인스타그램</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+당신의 이름을 입력해주세요 <br>
+<%= form_tag "/home/welcome", method: :get, remote: true do %>
+  <%=text_field_tag :keyword %>
+  <%=submit_tag "hello"%>
+<% end %>
+
+<div id="hello">
+  
+</div>
